@@ -1,0 +1,138 @@
+CCS PCM C Compiler, Version 5.048, 5967               22-ге-16 12:36
+
+               Filename:   G:\learning\Micochip\Projects\CCS\First Project\main.lst
+
+               ROM used:   82 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   6 (2%) at main() level
+                           7 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   019
+0003:  NOP
+.................... #include <main.h> 
+.................... #include <16F877A.h> 
+.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877A 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+.................... #use delay(crystal=4MHz) 
+0004:  MOVLW  22
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   018
+000A:  MOVLW  01
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  4A
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  GOTO   016
+0016:  DECFSZ 00,F
+0017:  GOTO   00A
+0018:  RETURN
+....................  
+....................  
+....................  
+.................... void main() 
+0019:  MOVF   03,W
+001A:  ANDLW  1F
+001B:  MOVWF  03
+001C:  BSF    03.5
+001D:  BSF    1F.0
+001E:  BSF    1F.1
+001F:  BSF    1F.2
+0020:  BCF    1F.3
+0021:  MOVLW  07
+0022:  MOVWF  1C
+0023:  BCF    03.7
+.................... { 
+....................  
+....................       set_tris_b(0x00); //declare port b as output 
+0024:  MOVLW  00
+0025:  MOVWF  06
+....................     
+....................    while(true) 
+....................    { 
+....................       output_high(pin_b0); //enable high voltage into b0 
+0026:  BCF    06.0
+0027:  BCF    03.5
+0028:  BSF    06.0
+....................       delay_ms(300); 
+0029:  MOVLW  02
+002A:  MOVWF  21
+002B:  MOVLW  96
+002C:  MOVWF  22
+002D:  CALL   004
+002E:  DECFSZ 21,F
+002F:  GOTO   02B
+....................       output_low(pin_b0); //enable low voltage into b0 
+0030:  BSF    03.5
+0031:  BCF    06.0
+0032:  BCF    03.5
+0033:  BCF    06.0
+....................  
+....................       output_high(pin_b1); //enable high voltage into b0 
+0034:  BSF    03.5
+0035:  BCF    06.1
+0036:  BCF    03.5
+0037:  BSF    06.1
+....................       delay_ms(300); 
+0038:  MOVLW  02
+0039:  MOVWF  21
+003A:  MOVLW  96
+003B:  MOVWF  22
+003C:  CALL   004
+003D:  DECFSZ 21,F
+003E:  GOTO   03A
+....................       output_low(pin_b1); //enable low voltage into b0 
+003F:  BSF    03.5
+0040:  BCF    06.1
+0041:  BCF    03.5
+0042:  BCF    06.1
+....................        
+....................       output_a(0b10101010); // this method set's value of port a 
+0043:  BSF    03.5
+0044:  CLRF   05
+0045:  MOVLW  AA
+0046:  BCF    03.5
+0047:  MOVWF  05
+....................       delay_ms(300); 
+0048:  MOVLW  02
+0049:  MOVWF  21
+004A:  MOVLW  96
+004B:  MOVWF  22
+004C:  CALL   004
+004D:  DECFSZ 21,F
+004E:  GOTO   04A
+004F:  BSF    03.5
+0050:  GOTO   026
+....................    } 
+....................  
+.................... } 
+0051:  SLEEP
+
+Configuration Fuses:
+   Word  1: 2F41   XT NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

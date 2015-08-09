@@ -1,0 +1,88 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.048
+Compiler=PCM
+CCSVersion=5.048
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[H:\learning\Micochip\Projects\First\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=4
+D1=29-02-2016
+D1_L=8
+D1_L1=[31947]Project Opened.
+D1_L2=[32117]Started Editing.
+D1_L3=[32509]Stopped Editing.
+D1_L4=[33020]Started Editing.
+D1_L5=[34190]Stopped Editing.
+D1_L6=[34430]Started Editing.
+D1_L7=[34695]Stopped Editing.
+TotalEdit=39
+TotalDebug=0
+D1_E=21
+D1_D=0
+D1_L8=[34695]Project Closed.
+D2=07-03-2016
+D2_L=20
+D2_L1=[37728]Project Opened.
+D2_L2=[38699]Project Closed.
+D2_L3=[39295]Project Opened.
+D2_L4=[39302]Project Closed.
+D2_L5=[39449]Project Opened.
+D2_L6=[39465]Started Editing.
+D2_L7=[39501]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L8=[39501]Project Closed.
+D2_L9=[39553]Project Opened.
+D2_L10=[39564]Started Editing.
+D2_L11=[39575]Stopped Editing.
+D2_L12=[39575]Project Closed.
+D2_L13=[39851]Project Opened.
+D2_L14=[39877]Started Editing.
+D2_L15=[39987]Stopped Editing.
+D2_L16=[39987]Project Closed.
+D2_L17=[40958]Project Opened.
+D2_L18=[40967]Started Editing.
+D2_L19=[40979]Stopped Editing.
+D2_L20=[40979]Project Closed.
+D3=11-04-2016
+D3_L=8
+D3_L1=[36223]Project Opened.
+D3_L2=[37943]Project Closed.
+D3_L3=[39056]Project Opened.
+D3_L4=[39148]Project Closed.
+D3_L5=[39258]Project Opened.
+D3_L6=[39293]Project Closed.
+D3_L7=[39308]Project Opened.
+D3_L8=[39370]Project Closed.
+D4=22-05-2016
+D4_L=6
+D4_L1=[43278]Project Opened.
+D4_L2=[44125]Started Editing.
+D4_L3=[44882]Stopped Editing.
+D4_L4=[45248]Started Editing.
+D4_L5=[45543]Stopped Editing.
+D4_E=13
+D4_D=0
+D4_L6=[45543]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=17
+[Units]
+Count=1
+1=main (main)
