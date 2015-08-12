@@ -1,0 +1,107 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     lcd_line
+021-022 @sprintf_string
+023     MAIN.i
+024     lcd_init.i
+024     @PRINTF_U_644.P1
+024     @PSTRINGC7_644.@SCRATCH1
+025     @PRINTF_U_644.P1
+025     lcd_init.@SCRATCH1
+025     @PSTRINGC7_644.@SCRATCH2
+026     @DIV88.P1
+026     @PSTRINGC7_644.@SCRATCH3
+027     @DIV88.P1
+027     lcd_putc.c
+027     @PSTRINGC7_644.@SCRATCH4
+028     @delay_ms1.P1
+028     lcd_gotoxy.x
+028     @DIV88.@SCRATCH1
+029     lcd_gotoxy.y
+02A     lcd_gotoxy.address
+02B     lcd_gotoxy.@SCRATCH1
+02C     lcd_send_byte.address
+02D     lcd_send_byte.n
+02E     lcd_read_byte.low
+02E     lcd_send_byte.@SCRATCH1
+02F     lcd_send_nibble.nibble
+02F     lcd_read_byte.high
+030.0   lcd_read_nibble.retval_0
+030     lcd_read_nibble.retval
+030.1   lcd_read_nibble.retval_1
+030.2   lcd_read_nibble.retval_2
+030.3   lcd_read_nibble.retval_3
+030     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const654.call
+000011  @delay_ms1
+000026  lcd_send_nibble
+00004F  lcd_read_nibble
+000075  lcd_send_byte
+000079  lcd_read_byte
+0000B2  lcd_init
+0000E2  lcd_gotoxy
+000107  lcd_putc
+00012E  @PSTRINGC7_644
+000186  @DIV88
+00019B  @PRINTF_U_644
+0001D2  MAIN
+0001D2  @cinit1
+0001DE  @cinit2
+
+Project Directory:
+    G:\learning\Micochip\Projects\CCS\LCD\
+
+Project Files:
+    main.c                                                  [22-„Â-16 12:56  CRC=DB6CB28A]
+    main.h                                                  [11-¬Ê—Ì·-16 10:56  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [26-éÊ∆‰-15 10:08  CRC=B1ED09FB]
+    C:\Program Files (x86)\PICC\Drivers\Flex_LCD420.c       [11-¬Ê—Ì·-16 10:46  CRC=083B0A44]
+
+Source signature=9DCFD10D
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=0B2A
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

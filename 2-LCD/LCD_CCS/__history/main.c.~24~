@@ -1,0 +1,27 @@
+#include <main.h>
+#include "Flex_LCD420.c"
+
+void main()
+{
+
+   lcd_init(); //initialize our lcd
+   int i =0;
+   
+   while(TRUE)
+   {
+
+      lcd_gotoxy(1,1); // take cursor to the determined x,y
+      lcd_putc("Hello !!"); // write your string into specified x,y
+      delay_ms(5 );
+      lcd_gotoxy(1,2);
+      printf(LCD_PUTC,"%U",i); //convert int to string and print it into lcd with %U for further info go to page 136 of refer
+      i++;
+      if(i == 255 )
+      {
+         lcd_init();
+         i=0;
+      }
+         //TODO: User Code
+   }
+
+}

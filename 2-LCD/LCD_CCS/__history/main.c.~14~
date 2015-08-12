@@ -1,0 +1,22 @@
+#include <main.h>
+#include "Flex_LCD420.c"
+
+void main()
+{
+
+   lcd_init();
+   int i =0;
+   
+   while(TRUE)
+   {
+
+   lcd_gotoxy(1,1);
+   lcd_putc("Service");
+   delay_ms(5);
+   lcd_gotoxy(1,2);
+   printf(LCD_PUTC,"%U",i);
+   i++;
+      //TODO: User Code
+   }
+
+}
