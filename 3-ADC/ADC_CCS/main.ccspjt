@@ -1,0 +1,62 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.048
+Compiler=PCM
+CCSVersion=5.048
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[H:\learning\Micochip\Sensor\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=2
+D1=18-04-2016
+D1_L=8
+D1_L1=[37927]Project Opened.
+D1_L2=[37995]Started Editing.
+D1_L3=[38438]Stopped Editing.
+D1_L4=[38680]Started Editing.
+D1_L5=[39914]Stopped Editing.
+D1_L6=[39937]Started Editing.
+D1_L7=[40191]Stopped Editing.
+TotalEdit=23
+TotalDebug=0
+D1_E=23
+D1_D=0
+D1_L8=[40191]Project Closed.
+D2=22-05-2016
+D2_L=14
+D2_L1=[46874]Project Opened.
+D2_L2=[46971]Project Closed.
+D2_L3=[46981]Project Opened.
+D2_L4=[46995]Started Editing.
+D2_L5=[47373]Stopped Editing.
+D2_L6=[47860]Started Editing.
+D2_L7=[48160]Stopped Editing.
+D2_L8=[48215]Started Editing.
+D2_L9=[48550]Stopped Editing.
+D2_L10=[48625]Started Editing.
+D2_L11=[49811]Stopped Editing.
+D2_L12=[49988]Started Editing.
+D2_L13=[50224]Project Opened.
+D2_L14=[50771]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=2
+2=main.h
+t2=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=22
+[Units]
+Count=1
+1=main (main)

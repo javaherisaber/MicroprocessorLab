@@ -1,0 +1,25 @@
+#include <main.h>
+#include "Flex_LCD420.c"
+
+void main()
+{
+   setup_adc_ports(ALL_ANALOG);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   
+   int value; // external value of ADC
+   lcd_init();
+   
+   while(TRUE)
+   {
+
+   set_adc_channel(0);
+   
+   delay_us(10);
+   
+   value = read_adc();
+   lcd_gotoxy(2,1);
+   printf(LCD_PUTC,"%U",value);
+   
+   }
+
+}

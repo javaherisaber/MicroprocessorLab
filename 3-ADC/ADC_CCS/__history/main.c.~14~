@@ -1,0 +1,30 @@
+#include <main.h>
+#include "Flex_LCD420.c"
+
+void main()
+{
+   //setup_adc_ports(ALL_ANALOG);
+   //setup_adc(ADC_CLOCK_INTERNAL); //these two line are for analog vrefl
+   setup_adc_ports(AN0_AN1_AN2_AN4_AN5_VSS_VREF);
+   setup_adc(ADC_CLOCK_DIV_2);
+   
+   float value; // external value of ADC
+   lcd_init();
+   
+   while(TRUE)
+   {
+
+   set_adc_channel(0);
+   
+   delay_us(10);
+   
+   value = read_adc();
+  // float temp = value / 255;
+   //float tmp = temp*5;
+   //lcd_gotoxy(2,1);
+   printf(LCD_PUTC,"%f",value);
+   
+   delay_ms(100);
+   }
+
+}
