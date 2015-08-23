@@ -1,0 +1,20 @@
+#include <main.h>
+#include "Flex_LCD420.c"
+#USE RS232(BAUD=9600, xmit=PIN_c6, rcv=PIN_c7,SRTEAM=COM_A);
+#USE RS232(BAUD=9600, xmit=PIN_c1, rcv=PIN_c2,SRTEAM=COM_b);
+
+void main()
+{
+   int32 var2;
+   char string1[30];
+   
+   
+   
+   while(TRUE)
+   {
+
+
+      //TODO: User Code
+   }
+
+}

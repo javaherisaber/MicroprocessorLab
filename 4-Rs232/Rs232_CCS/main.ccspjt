@@ -1,0 +1,61 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.048
+Compiler=PCM
+CCSVersion=5.048
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[H:\learning\Micochip\Projects\Rs232\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=02-05-2016
+D1_L=10
+D1_L1=[37386]Project Opened.
+D1_L2=[37393]Started Editing.
+D1_L3=[38949]Stopped Editing.
+D1_L4=[38961]Started Editing.
+D1_L5=[40175]Stopped Editing.
+D1_L6=[40458]Started Editing.
+D1_L7=[40830]Stopped Editing.
+D1_L8=[40839]Started Editing.
+D1_L9=[41151]Stopped Editing.
+TotalEdit=48
+TotalDebug=0
+D1_E=43
+D1_D=0
+D1_L10=[41151]Project Closed.
+D2=09-05-2016
+D2_L=2
+D2_L1=[38066]Project Opened.
+D2_L2=[38558]Project Closed.
+D3=22-05-2016
+D3_L=7
+D3_L1=[51684]Project Opened.
+D3_L2=[52609]Project Opened.
+D3_L3=[53243]Started Editing.
+D3_L4=[53806]Stopped Editing.
+D3_L5=[53888]Started Editing.
+D3_L6=[53897]Stopped Editing.
+D3_E=5
+D3_D=0
+D3_L7=[53897]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=24
+[Units]
+Count=1
+1=main (main)
