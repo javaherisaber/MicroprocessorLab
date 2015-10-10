@@ -1,0 +1,25 @@
+#include <main.h>
+
+#INT_RDA
+void  RDA_isr(void) 
+{
+
+}
+
+void main()
+{
+	setup_wdt(WDT_ON);
+	setup_wdt(WDT_2304MS|WDT_DIV_16);		//~2/3 s reset
+
+
+	enable_interrupts(INT_RDA);
+	enable_interrupts(GLOBAL);
+
+	while(TRUE)
+	{
+
+
+		//TODO: User Code
+	}
+
+}

@@ -1,0 +1,60 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.048
+Compiler=PCM
+CCSVersion=5.048
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[G:\learning\Micochip\Projects\CCS\Interrupt\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=16-05-2016
+D1_L=10
+D1_L1=[37862]Project Opened.
+D1_L2=[38072]Started Editing.
+D1_L3=[39120]Stopped Editing.
+D1_L4=[41128]Started Editing.
+D1_L5=[41169]Stopped Editing.
+TotalEdit=20
+TotalDebug=0
+D1_E=19
+D1_D=0
+D1_L6=[41169]Project Closed.
+D1_L7=[41287]Project Opened.
+D1_L8=[41369]Started Editing.
+D1_L9=[41613]Stopped Editing.
+D1_L10=[41613]Project Closed.
+D2=22-05-2016
+D2_L=6
+D2_L1=[54224]Project Opened.
+D2_L2=[54248]Started Editing.
+D2_L3=[54586]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[54611]Project Closed.
+D2_L5=[62180]Project Opened.
+D2_L6=[62566]Project Closed.
+D3=23-05-2016
+D3_L=2
+D3_L1=[36992]Project Opened.
+D3_L2=[37388]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=25
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=11
+[Units]
+Count=1
+1=main (main)
